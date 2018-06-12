@@ -4,16 +4,18 @@
       <div class="row">
         <div class="col-sm-5">
           <label for="name">Name</label>
-          <input type="text" id="name" autocomplete="off" class="form-control">
+          <input type="text" id="name" autocomplete="off" class="form-control"
+          #nameInput>
         </div>
         <div class="col-sm-2 form-group">
           <label for="amount">Amount</label>
-          <input type="Number" id="amount" class="form-control">
+          <input type="Number" id="amount" class="form-control"
+          #amountInput>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <button class="btn btn-success" style="margin: 0 5px 0 0">Add</button>
+          <a class="btn btn-success" style="margin: 0 5px 0 0" (click)="onAddInput()">Add</a>
           <button class="btn btn-danger" style="margin: 0 5px 0 0">Remove</button>
           <button class="btn btn-primary">Clear</button>
         </div>
